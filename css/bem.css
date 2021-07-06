@@ -1,0 +1,154 @@
+*,
+*::after, 
+*::before {
+    box-sizing: border-box;
+} 
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+
+
+.menu {
+  /* Siempre poner estas 4 lineas al ul */
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  background-color: #03a9f4;
+}
+
+.menu__link {
+  color: #e3f2fd;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 4rem;
+  padding: 0.5rem 0;
+  font-weight: 600;
+}
+
+.menu__link--active {
+  background-color: #0288d1;
+  padding: 10px 20px;
+  border-radius: 100px;
+}
+
+/* buttons */
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.button {
+  padding: 10px 20px;
+  border-radius: 6px;
+  outline: 0;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.button--dark {
+  background-color:#212121;
+  color: #fff;
+}
+
+.button--primary {
+  background-color: #01579b;
+  color: #fff;
+}
+
+.button--danger {
+  background-color:#d32f2f;
+  color: #fff;
+}
+.button--warning {
+  background-color:#fb8c00;
+  color: #fff;
+}
+
+.button--success {
+  background-color: #689f38;
+  color: white;
+}
+
+.button--block {
+  display: block;
+  width: 100%;
+}
+
+
+/* Efectos con imagenes */
+.img-container {
+  position: relative;
+  margin: 2rem;
+  overflow: hidden;
+}
+ 
+.img-container::after,
+.img-container::before {
+  content: '';
+  position: absolute;
+  top: 0; 
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s;
+}
+
+.img-container::before {
+  background-color: rgba(0,0,0,.8);
+}
+
+.img-container::after {
+  content: 'Gato Saludando';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e3f2fd;
+  font-size: 3rem;
+}
+
+.img-container--scale::after,
+.img-container--scale::before {
+  transform: scale(0);
+}
+
+.img-container:hover.img-container--scale::after, 
+.img-container:hover.img-container--scale::before {
+ transform: scale(1);
+}
+
+.img-container--left::after,
+.img-container--left::before {
+  transform:translateX(-100%);
+}
+
+.img-container:hover.img-container--left::after, 
+.img-container:hover.img-container--left::before {
+ transform: translateX(0);
+}
+
+.img-container--bottom::after,
+.img-container--bottom::before {
+  transform:translateY(100%);
+}
+
+.img-container:hover.img-container--bottom::after, 
+.img-container:hover.img-container--bottom::before {
+ transform: translateY(0);
+}
+
+.img {
+  display: block;
+  margin-left: auto; 
+  margin-right: auto;
+  max-width: 100%;
+}

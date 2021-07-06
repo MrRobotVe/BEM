@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taller de Metodologia CSS BEM</title>
+  <link rel="stylesheet" href="css/bem.css">
+</head>
+<body>
+  <!-- 
+    BEM(Bloque, Elemento, Modificador): Es una metodologia de CSS, que nos ayuda a crear componentes reutilizables, código claro y mantener la especificidad al minimo. Esto gracias a su nomenclatura. En resumen BEM nos permite: 
+      - Matener especifisidad al minimo.
+      - Codigo modular.
+      - Codigo limpio.
+      - Nomenclatura(Bloque, Elemento, Modificador).
+
+    Bloque(Block): Es una entidad independiente, que no necesita de nadie más para existir.
+    ejemplo: Header, Nav, Form, Footer, Contenedor, ul etc...
+    Como se nombran los bloques ?
+      se les nombra con la funcionalidad del bloque, es decir, describe su proposito(¿Que es? - menu boton card) NO su estado(¿Como se ve? rojo, azul, verde). 
+      Ejemplo: <nav class="nav"></nav>
+    
+    Elemento(Element): Es una parte compuesta de un bloque, es decir, depende directamente de un bloque, por lo que debe estar dentro de un bloque(Es dependiente de un bloque y esta ligado a el).
+    Como se les Nombra a los elementos?
+      se les nombra primero nombre de su bloque contenedor, dos guiones bajos(__) y la descripcion del elemento. describe su proposito(¿Que es esto? - item, texto, titulo, input) NO su estado(tipo ¿Cual es, Como luce? rojo, azul, verde). Ejemplos: 
+      <form class="form">
+        <input type="text" class="form__input">
+        <input type="submit" class="form__submit" value="Enviar">
+      </form>
+
+      <nav class="nav">
+        <a href="" class="nav__link">Item 1</a>
+        <a href="" class="nav__link">Item 2</a>
+      </nav>
+
+    Modificador(Modifier): una entidad que define la apariencia, el estado o el comportamiento de un bloque o elemento.
+    Como se les nombra a los modificadores?
+      se les nombra, con el nombre que tenian anteriormente(bloque o elemento) se les agrega dos guiones medios(--) y la descripcion de la modificacion, es decir, describe su apariencia(¿De que tamaño? o ¿Que tema? ¿Que color? size, tech, blue, red) su estado(¿Que lo diferencia de los demas? disabled, active) y su comportamiento(¿Como se comporta? o ¿Como responde al usuario? direction--left direccition-top). Ejemplos: 
+      <header class="header header--blue"></header>
+
+      <nav class="nav">
+        <a href="" class="nav__link nav__link--active">Item 1</a>
+        <a href="" class="nav__link">Item 2</a>
+      </nav>
+       
+      <input type="text" class="form__input form__input--block">
+  -->
+  <nav class="nav">
+    <ul id="main-menu" class="menu">
+      <li class="menu__item">
+        <a class="menu__link menu__link--active" href="#">Home</a>
+      </li>
+      <li class="menu__item" class="menu__link">
+        <a class="menu__link" href="#">About</a>
+      </li>
+      <li class="menu__item" class="menu__link">
+        <a class="menu__link" href="#">Portfolio</a>
+      </li>
+      <li class="menu__item" class="menu__link">
+        <a class="menu__link" href="#">Contact</a>
+      </li>
+    </ul> 
+  </nav>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam impedit deserunt a sequi tempora dolorum sapiente eligendi beatae expedita laudantium deleniti, adipisci, unde maxime possimus? Ab adipisci quos nihil distinctio maiores possimus ducimus doloribus quaerat molestias provident, rerum accusantium, eligendi assumenda, obcaecati sequi illum qui quod. Voluptatem aperiam necessitatibus fugiat suscipit laboriosam enim, pariatur id at? Qui excepturi non praesentium nulla officia, ipsa iusto maiores minima amet quia placeat doloremque rerum suscipit corrupti nostrum tempora distinctio, repudiandae, perferendis nisi pariatur? Tenetur, ex recusandae reiciendis voluptates ipsam architecto, ad asperiores molestiae sint mollitia, magni dolorum explicabo esse. Deleniti, vero voluptatibus. Natus.</p>
+  
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam impedit deserunt a sequi tempora dolorum sapiente eligendi beatae expedita laudantium deleniti, adipisci, unde maxime possimus? Ab adipisci quos nihil distinctio maiores possimus ducimus doloribus quaerat molestias provident, rerum accusantium, eligendi assumenda, obcaecati sequi illum qui quod. Voluptatem aperiam necessitatibus fugiat suscipit laboriosam enim, pariatur id at? Qui excepturi non praesentium nulla officia, ipsa iusto maiores minima amet quia placeat doloremque rerum suscipit corrupti nostrum tempora distinctio, repudiandae, perferendis nisi pariatur? Tenetur, ex recusandae reiciendis voluptates ipsam architecto, ad asperiores molestiae sint mollitia, magni dolorum explicabo esse. Deleniti, vero voluptatibus. Natus.</p>
+
+  <div class="buttons">
+    <button class="button button--primary">Boton primary</button>
+    <button class="button button--danger">Boton danger</button>
+    <button class="button button--warning">Boton warning</button>
+    <button class="button button--success">Boton success</button>
+    <button class="button button--dark">Boton dark</button>
+  </div>
+
+  <div class="img-container img-container--scale">
+    <img src="img/cat.jpg" class="img" alt="">
+  </div>
+  <div class="img-container img-container--left">
+    <img src="img/cat.jpg" class="img" alt="">
+  </div>
+  <div class="img-container img-container--bottom">
+    <img src="img/cat.jpg" class="img" alt="">
+  </div>
+  <script src="js/scripts.js"></script>
+</body>
+</html>

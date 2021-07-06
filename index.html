@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Metodología BEM</title>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:ital,wght@0,400;1,600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+	<!-- B.E.M: Block, Element, Modifier o en español Bloques, Elementos y Modificadores -->
+	<header class="header">
+		<nav class="nav">
+			<div class="nav__logo">
+				<img src="img/favicon.png" alt="Logo" class="nav__img">
+			</div>
+			<div class="nav__links">
+				<a href="#" class="nav__link nav__link--active">Home</a>
+				<a href="#" class="nav__link">About</a>
+				<a href="#" class="nav__link">Contact</a>
+			</div>
+		</nav>
+	</header>
+	<div class="container">
+		<div class="container__cards">
+			<section class="card"> <!-- Bloque -->
+				<a href="" class="card__thumbnail"> <!-- Elemento -->
+					<img class="card__img" src="img/1.jpg" alt="">
+				</a>
+				<section class="card__texts">
+					 <h3 class="card__title">
+						<a class="card__link" href="#">Lorem ipsum dolor sit amet consectetur</a>
+					</h3>
+						<p class="card__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate vero perspiciatis ex at quo amet ipsam! Animi in ad veritatis hic maiores sequi aliquam! Ratione!</p>
+	
+						<a href="" class="btn btn--absolute"> <!-- Bloque  -->
+							<span class="btn__text">Ver Mas</span>
+							<i class="btn__icon fas fa-arrow-right"></i>
+						</a>
+				</section>
+			</section>
+			
+			<section class="card"> <!-- Bloque -->
+				<a href="" class="card__thumbnail">
+					<img class="card__img" src="img/1.jpg" alt="">
+				</a>
+				<section class="card__texts">
+					 <h3 class="card__title">
+						<a class="card__link" href="#">Lorem ipsum dolor sit amet consectetur</a>
+					</h3>
+						<p class="card__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate vero perspiciatis ex at quo amet ipsam! Animi in ad veritatis hic maiores sequi aliquam! Ratione!</p>
+	
+						<a href="" class="btn btn--absolute"> <!-- Bloque -->
+							<span class="btn__text">Ver Mas</span>
+							<i class="btn__icon fas fa-arrow-right"></i>
+						</a>
+				</section>
+			</section>
+		</div>
+
+		<section class="phrase">
+			<h2 class="phrase__text">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, sed ex non a molestias quidem.
+			</h2>
+
+			<a href="#" role="button" class="btn btn--secondary"> <!-- Modificador -->
+				<span class="btn__text">Comprar</span>
+				<i class="fas fa-shopping-cart"></i>
+			</a>
+		</section>
+	</div>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+</body>
+</html>

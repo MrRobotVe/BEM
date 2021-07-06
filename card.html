@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card con BEM</title>
+  <link rel="stylesheet" href="css/bem.css">
+  <link rel="stylesheet" href="css/card.css">
+</head>
+<body>
+  <h1>Estructura de una tarjeta con BEM</h1>
+
+  <article class="card">
+      <section class="card__header">
+        <figure class="card__figure">
+          <img 
+            class="card__img" 
+            src="img/cat.jpg" 
+            alt="Gato Kawaii"
+          />
+        </figure>
+      </section>
+      <section class="card__body">
+        <h2 class="card__title">
+          Gato 
+          <span class="card__title--blue">Saludando</span>
+        </h2>
+        <p class="card__subtitle">Gato saludando la camara mientras lo enfoco</p>
+        <p class="card__info">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias dolorum eligendi modi nulla sit, deleniti temporibus itaque error cum praesentium consequatur, quia voluptas consectetur enim exercitationem in corrupti sint numquam quas. Esse ut consectetur quibusdam, provident ullam dolore numquam reiciendis eos nemo, exercitationem tempore modi. Ipsum sint sit praesentium et!</p>
+      </section>
+      <section class="card__footer">
+        <div class="card__buttons">
+          <button class="button button--primary">Ver mas</button>
+          <button class="button button--success">Compartir</button>
+        </div>
+      </section>
+  </article>
+   
+</body>
+</html>

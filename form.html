@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form con BEM</title>
+  <link rel="stylesheet" href="css/bem.css">
+  <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+  <h1>Estructura de Form con BEM</h1>
+  
+  <div class="container">
+    <form class="form">
+      <h2 class="form__title">Registrate</h2> 
+      <div class="form__field">
+        <label for="name" class="form__label">Name</label>
+        <input type="text" class="form__input" placeholder="Introduce tu Nombre">
+      </div>
+      <div class="form__field">
+        <label for="name" class="form__label">Email</label>
+        <input type="email" class="form__input" placeholder="Introduce tu Email">
+      </div>
+      <div class="form__field">
+        <label for="name" class="form__label">Password</label>
+        <input type="password" class="form__input" placeholder="Introduce tu Contraseña">
+      </div>
+      <div class="form__buttons">
+        <button type="submit" class="button button--success">Enviar</button>
+        <button type="reset" class="button button--danger">Reset</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
